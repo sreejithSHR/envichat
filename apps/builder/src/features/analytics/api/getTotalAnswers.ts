@@ -34,7 +34,7 @@ export const getTotalAnswers = authenticatedProcedure
     if (!typebot?.publishedTypebot)
       throw new TRPCError({
         code: 'NOT_FOUND',
-        message: 'Published Envichat not found',
+        message: 'Published typebot not found',
       })
 
     const date = parseDateFromTimeFilter(timeFilter)

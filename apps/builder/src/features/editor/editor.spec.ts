@@ -159,7 +159,7 @@ test('Rename and icon change should work', async ({ page }) => {
   await createTypebots([
     {
       id: typebotId,
-      name: 'My awesome Envichat',
+      name: 'My awesome typebot',
       ...parseDefaultGroupWithBlock({
         type: InputBlockType.TEXT,
       }),
@@ -169,15 +169,15 @@ test('Rename and icon change should work', async ({ page }) => {
   await page.goto(`/typebots/${typebotId}/edit`)
   await page.click('[data-testid="editable-icon"]')
   await page.getByRole('button', { name: 'Emoji' }).click()
-  await expect(page.locator('text="My awesome Envichat"')).toBeVisible()
+  await expect(page.locator('text="My awesome typebot"')).toBeVisible()
   await page.fill('input[placeholder="Search..."]', 'love')
   await page.click('text="😍"')
-  await page.click('text="My awesome Envichat"')
-  await page.fill('input[value="My awesome Envichat"]', 'My superb Envichat')
-  await page.press('input[value="My superb Envichat"]', 'Enter')
+  await page.click('text="My awesome typebot"')
+  await page.fill('input[value="My awesome typebot"]', 'My superb typebot')
+  await page.press('input[value="My superb typebot"]', 'Enter')
   await page.click('[aria-label="Navigate back"]')
   await expect(page.locator('text="😍"')).toBeVisible()
-  await expect(page.locator('text="My superb Envichat"')).toBeVisible()
+  await expect(page.locator('text="My superb typebot"')).toBeVisible()
 })
 
 test('Preview from group should work', async ({ page }) => {
@@ -218,7 +218,7 @@ test('Published typebot menu should work', async ({ page }) => {
   await createTypebots([
     {
       id: typebotId,
-      name: 'My awesome Envichat',
+      name: 'My awesome typebot',
       ...parseDefaultGroupWithBlock({
         type: InputBlockType.TEXT,
       }),
@@ -228,14 +228,14 @@ test('Published typebot menu should work', async ({ page }) => {
   await page.goto(`/typebots/${typebotId}/edit`)
   await expect(page.locator("text='Start'")).toBeVisible()
   await expect(page.locator('button >> text="Published"')).toBeVisible()
-  await page.click('[aria-label="Show published Envichat menu"]')
-  await page.click('text="Close Envichat to new responses"')
+  await page.click('[aria-label="Show published typebot menu"]')
+  await page.click('text="Close typebot to new responses"')
   await expect(page.locator('button >> text="Closed"')).toBeDisabled()
-  await page.click('[aria-label="Show published Envichat menu"]')
-  await page.click('text="Reopen Envichat to new responses"')
+  await page.click('[aria-label="Show published typebot menu"]')
+  await page.click('text="Reopen typebot to new responses"')
   await expect(page.locator('button >> text="Published"')).toBeDisabled()
-  await page.click('[aria-label="Show published Envichat menu"]')
-  await page.click('button >> text="Unpublish Envichat"')
+  await page.click('[aria-label="Show published typebot menu"]')
+  await page.click('button >> text="Unpublish typebot"')
   await page.click('button >> text="Publish"')
   await expect(page.locator('button >> text="Published"')).toBeVisible()
 })

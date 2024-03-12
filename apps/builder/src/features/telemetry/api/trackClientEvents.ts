@@ -84,7 +84,7 @@ export const trackClientEvents = authenticatedProcedure
         if (!typebot || (await isWriteTypebotForbidden(typebot, user)))
           throw new TRPCError({
             code: 'NOT_FOUND',
-            message: 'Envichat not found',
+            message: 'Typebot not found',
           })
       }
     }

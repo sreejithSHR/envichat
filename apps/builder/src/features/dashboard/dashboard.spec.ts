@@ -42,9 +42,9 @@ test('folders and typebots should be deletable', async ({ page }) => {
   await deleteButtonInConfirmDialog(page).click()
   await expect(page.locator('span >> text="Folder #1"')).not.toBeVisible()
   await page.click('button[aria-label="Show more options"]')
-  await page.click('li:has-text("Envichat #1") >> button:has-text("Delete")')
+  await page.click('li:has-text("Typebot #1") >> button:has-text("Delete")')
   await deleteButtonInConfirmDialog(page).click()
-  await expect(page.locator('span >> text="Envichat #1"')).not.toBeVisible()
+  await expect(page.locator('span >> text="Typebot #1"')).not.toBeVisible()
 })
 
 test('folders and typebots should be movable', async ({ page }) => {
@@ -52,10 +52,10 @@ test('folders and typebots should be movable', async ({ page }) => {
   await createFolders([{ id: droppableFolderId, name: 'Droppable folder' }])
   await createTypebots([{ name: 'Draggable typebot' }])
   await page.goto('/typebots')
-  const typebotButton = page.locator('li:has-text("Draggable Envichat")')
+  const typebotButton = page.locator('li:has-text("Draggable typebot")')
   const folderButton = page.locator('li:has-text("Droppable folder")')
   await page.dragAndDrop(
-    'li:has-text("Draggable Envichat")',
+    'li:has-text("Draggable typebot")',
     'li:has-text("Droppable folder")'
   )
   await expect(typebotButton).toBeHidden()
@@ -63,7 +63,7 @@ test('folders and typebots should be movable', async ({ page }) => {
   await expect(page).toHaveURL(new RegExp(`/folders/${droppableFolderId}`))
   await expect(typebotButton).toBeVisible()
   await page.dragAndDrop(
-    'li:has-text("Draggable Envichat")',
+    'li:has-text("Draggable typebot")',
     'a:has-text("Back")'
   )
   await expect(typebotButton).toBeHidden()

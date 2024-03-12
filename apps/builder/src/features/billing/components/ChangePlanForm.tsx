@@ -129,7 +129,7 @@ export const ChangePlanForm = ({ workspace, excludedPlans }: Props) => {
 
       <Text color="gray.500">
         {t('billing.customLimit.preLink')}{' '}
-        <TextLink href={'https://forms.gle/UoJ2aw6GXsXWPjYa8'} isExternal>
+        <TextLink href={'https://typebot.io/enterprise-lead-form'} isExternal>
           {t('billing.customLimit.link')}
         </TextLink>
       </Text>

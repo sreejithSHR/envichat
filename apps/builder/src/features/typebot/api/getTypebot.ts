@@ -30,7 +30,7 @@ export const getTypebot = publicProcedure
         .optional()
         .default(false)
         .describe(
-          'If enabled, the Envichat will be converted to the latest schema version'
+          'If enabled, the typebot will be converted to the latest schema version'
         ),
     })
   )
@@ -65,7 +65,7 @@ export const getTypebot = publicProcedure
         !existingTypebot?.id ||
         (await isReadTypebotForbidden(existingTypebot, user))
       )
-        throw new TRPCError({ code: 'NOT_FOUND', message: 'Envichat not found' })
+        throw new TRPCError({ code: 'NOT_FOUND', message: 'Typebot not found' })
 
       try {
         const parsedTypebot = migrateToLatestVersion
@@ -79,7 +79,7 @@ export const getTypebot = publicProcedure
       } catch (err) {
         throw new TRPCError({
           code: 'INTERNAL_SERVER_ERROR',
-          message: 'Failed to parse Envichat',
+          message: 'Failed to parse typebot',
           cause: err,
         })
       }

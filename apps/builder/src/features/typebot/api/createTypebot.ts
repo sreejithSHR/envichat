@@ -96,7 +96,7 @@ export const createTypebot = authenticatedProcedure
       data: {
         version: '6',
         workspaceId,
-        name: typebot.name ?? 'My Envichat',
+        name: typebot.name ?? 'My typebot',
         icon: typebot.icon,
         selectedThemeTemplateId: typebot.selectedThemeTemplateId,
         groups: (typebot.groups
@@ -130,7 +130,7 @@ export const createTypebot = authenticatedProcedure
 
     await trackEvents([
       {
-        name: 'Envichat created',
+        name: 'Typebot created',
         workspaceId: parsedNewTypebot.workspaceId,
         typebotId: parsedNewTypebot.id,
         userId: user.id,

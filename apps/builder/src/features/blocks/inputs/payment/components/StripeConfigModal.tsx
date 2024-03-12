@@ -136,7 +136,7 @@ export const StripeConfigModal = ({
                 'blocks.inputs.payment.settings.stripeConfig.accountName.label'
               )}
               onChange={handleNameChange}
-              placeholder="Envichat"
+              placeholder="Typebot"
               withVariableButton={false}
               debounceTimeout={0}
             />

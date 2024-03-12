@@ -108,7 +108,7 @@ export const TypebotProvider = ({
         }
         setIs404(false)
         showToast({
-          title: 'Could not fetch Envichat',
+          title: 'Could not fetch typebot',
           description: error.message,
           details: {
             content: JSON.stringify(error.data?.zodError?.fieldErrors, null, 2),
@@ -132,7 +132,7 @@ export const TypebotProvider = ({
             typebotData?.currentUserMode === 'write'),
         onError: (error) => {
           showToast({
-            title: 'Could not fetch published Envichat',
+            title: 'Could not fetch published typebot',
             description: error.message,
             details: {
               content: JSON.stringify(
@@ -151,7 +151,7 @@ export const TypebotProvider = ({
     trpc.typebot.updateTypebot.useMutation({
       onError: (error) =>
         showToast({
-          title: 'Error while updating Envichat',
+          title: 'Error while updating typebot',
           description: error.message,
         }),
       onSuccess: () => {

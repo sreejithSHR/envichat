@@ -32,7 +32,7 @@ export const TypebotNotFoundPage = () => {
         <VStack spacing={6}>
           <VStack>
             <Heading>404</Heading>
-            <Text fontSize="xl">Envichat not found.</Text>
+            <Text fontSize="xl">Typebot not found.</Text>
           </VStack>
           <Button
             as={Link}

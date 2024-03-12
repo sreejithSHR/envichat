@@ -56,7 +56,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       } catch (error) {
         if (isUniqueConstraintError(error)) {
           return res.status(400).send({
-            message: 'User already has access to this Envichat.',
+            message: 'User already has access to this typebot.',
           })
         }
         throw error

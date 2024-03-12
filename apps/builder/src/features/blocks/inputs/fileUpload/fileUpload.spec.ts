@@ -51,7 +51,7 @@ test('options should work', async ({ page }) => {
 })
 
 test.describe('Free workspace', () => {
-  test("shouldn't be able to publish Envichat", async ({ page }) => {
+  test("shouldn't be able to publish typebot", async ({ page }) => {
     const typebotId = createId()
     await createTypebots([
       {

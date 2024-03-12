@@ -33,7 +33,7 @@ export const getPublishedTypebot = authenticatedProcedure
         .optional()
         .default(false)
         .describe(
-          'If enabled, the Envichat will be converted to the latest schema version'
+          'If enabled, the typebot will be converted to the latest schema version'
         ),
     })
   )
@@ -100,7 +100,7 @@ export const getPublishedTypebot = authenticatedProcedure
       } catch (err) {
         throw new TRPCError({
           code: 'INTERNAL_SERVER_ERROR',
-          message: 'Failed to parse published Envichat',
+          message: 'Failed to parse published typebot',
           cause: err,
         })
       }

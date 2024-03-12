@@ -36,7 +36,7 @@ test.describe.parallel('Settings page', () => {
       })
       await page.goto(`/typebots/${typebotId}/settings`)
       await expect(
-        page.locator('a:has-text("Made with Envichat")')
+        page.locator('a:has-text("Made with Typebot")')
       ).toHaveAttribute('href', 'https://www.typebot.io/?utm_source=litebadge')
       await page.click('button:has-text("Typing emulation")')
       await page.fill('[data-testid="speed"] input', '350')
@@ -93,7 +93,7 @@ test.describe.parallel('Settings page', () => {
       await page.fill('input[placeholder="Paste the image link..."]', imageUrl)
       await expect(websiteImg).toHaveAttribute('src', imageUrl)
 
-      await page.getByRole('textbox', { name: 'Title' }).fill('Awesome Envichat')
+      await page.getByRole('textbox', { name: 'Title' }).fill('Awesome typebot')
       await page
         .getByRole('textbox', { name: 'Description' })
         .fill('Lorem ipsum')

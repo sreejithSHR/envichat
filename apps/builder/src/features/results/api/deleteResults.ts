@@ -62,7 +62,7 @@ export const deleteResults = authenticatedProcedure
       },
     })
     if (!typebot || (await isWriteTypebotForbidden(typebot, user)))
-      throw new TRPCError({ code: 'NOT_FOUND', message: 'Envichat not found' })
+      throw new TRPCError({ code: 'NOT_FOUND', message: 'Typebot not found' })
     const { success } = await archiveResults(prisma)({
       typebot: {
         groups: typebot.groups,
@@ -76,6 +76,6 @@ export const deleteResults = authenticatedProcedure
     if (!success)
       throw new TRPCError({
         code: 'NOT_FOUND',
-        message: 'Envichat not found',
+        message: 'Typebot not found',
       })
   })

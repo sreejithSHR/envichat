@@ -63,7 +63,7 @@ const App = ({ publishedTypebot, ...props }: TypebotPageProps) => {
   if (!publishedTypebot || publishedTypebot.typebot.isArchived)
     return <NotFoundPage />
   if (publishedTypebot.typebot.isClosed)
-    return <ErrorPage error={new Error('This bot is now closed')} />
+    return <ErrorPage error={new Error('This bot is j now closed')} />
   return <TypebotPageV2 publishedTypebot={publishedTypebot} {...props} />
 }
 

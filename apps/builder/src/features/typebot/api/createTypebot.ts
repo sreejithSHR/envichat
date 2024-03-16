@@ -130,7 +130,7 @@ export const createTypebot = authenticatedProcedure
 
     await trackEvents([
       {
-        name: 'EnviChat created',
+        name: 'User created',
         workspaceId: parsedNewTypebot.workspaceId,
         typebotId: parsedNewTypebot.id,
         userId: user.id,

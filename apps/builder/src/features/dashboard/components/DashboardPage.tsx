@@ -46,7 +46,7 @@ export const DashboardPage = () => {
         returnUrl: `${window.location.origin}/typebots`,
       })
     }
-    if (workspace && subscribePlan && user && workspace.plan === 'Free') {
+    if (workspace && subscribePlan && user && workspace.plan === 'FREE') {
       setIsLoading(true)
       setPreCheckoutPlan({
         plan: subscribePlan as 'PRO' | 'STARTER',

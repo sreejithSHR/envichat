@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 
 export const SocialMetaTags = ({
-  title = 'Typebot - Open-source conversational apps builder',
+  title = 'Envichat - A no-code conversational Chatbot  builder',
   description = 'Powerful blocks to create unique chat experiences. Embed them anywhere on your apps and start collecting results like magic.',
   currentUrl,
   imagePreviewUrl = 'https://cdn.glitch.global/7128924b-fdd1-4fe5-9767-8faae7bf1426/Gradient%20Minimalist%20Black%20Friday%20Poster%20Landscape%20(1).png?v=1710843973918',

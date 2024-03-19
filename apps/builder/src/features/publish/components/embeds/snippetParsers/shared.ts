@@ -44,7 +44,7 @@ export const parseReactBotProps = ({ typebot, apiHost }: BotProps) => {
 
 export const typebotImportCode = isCloudProdInstance()
   ? `import Typebot from 'https://cdn.jsdelivr.net/gh/sreejithSHR/cdn-files-envichat@main/sdn.js'`
-  : `import Typebot from 'https://cdn.jsdelivr.net/gh/sreejithSHR/cdn-files-envichat@main${packageJson.version}/sdn.js'`
+  
 
 export const parseInlineScript = (script: string) =>
   prettier.format(

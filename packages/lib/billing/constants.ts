@@ -8,8 +8,8 @@ export const prices = {
 
 export const chatsLimits = {
   [Plan.FREE]: 20,
-  [Plan.STARTER]: 200,
-  [Plan.PRO]: 5000,
+  [Plan.STARTER]: 300,
+  [Plan.PRO]: 1500,
 } as const
 
 export const seatsLimits = {
@@ -49,11 +49,11 @@ export const starterChatTiers = [
 
 export const proChatTiers = [
   {
-    up_to: 7000,
+    up_to: 2000,
     flat_amount: 0,
   },
   {
-    up_to: 9000,
+    up_to: 5000,
     flat_amount: 5000,
   },
   {

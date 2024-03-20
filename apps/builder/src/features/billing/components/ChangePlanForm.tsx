@@ -129,7 +129,12 @@ export const ChangePlanForm = ({ workspace, excludedPlans }: Props) => {
 
       <Text color="gray.500">
         {t('billing.customLimit.preLink')}{' '}
-        <TextLink href={'https://forms.gle/UoJ2aw6GXsXWPjYa8'} isExternal>
+        <TextLink
+          href={
+            'https://docs.google.com/forms/d/e/1FAIpQLSd9ZT1rfEyd4aTuucpa_oE349kv8lRoBxx-9Vs8jpL01YO6pw/viewform'
+          }
+          isExternal
+        >
           {t('billing.customLimit.link')}
         </TextLink>
       </Text>

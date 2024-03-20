@@ -370,7 +370,7 @@
   "skip": "Skip",
   "templates.buttons.fromScratchButton.label": "Start from scratch",
   "templates.buttons.fromTemplateButton.label": "Start from a template",
-  "templates.buttons.heading": "Create a new typebot",
+  "templates.buttons.heading": "Create a new Envibot",
   "templates.buttons.importFileButton.label": "Import a file",
   "templates.importFromFileButon.toastError.description": "Failed to parse the file. Are you sure it's a typebot?",
   "templates.modal.marketing.insuranceOffer.description": "You are a dog insurance company. This bot allows you to collect information about the dog and provide a quote.",

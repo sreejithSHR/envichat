@@ -44,11 +44,7 @@ export const GoogleSheetConnectModal = ({
             Make sure to check all the permissions so that the integration works
             as expected:
           </Text>
-          <Image
-            src="/images/google-spreadsheets-scopes.png"
-            alt="Google Spreadsheets checkboxes"
-            rounded="md"
-          />
+          <Image src="" alt="Google Spreadsheets checkboxes" rounded="md" />
           <AlertInfo>
             Google does not provide more granular permissions than
             &quot;read&quot; or &quot;write&quot; access. That&apos;s why it

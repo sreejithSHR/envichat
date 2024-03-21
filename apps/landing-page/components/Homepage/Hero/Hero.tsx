@@ -59,7 +59,7 @@ export const Hero = () => {
                 height="4rem"
                 px="2rem"
               >
-                Create a Envibot for free
+                Create an Envibot for free
               </Button>
             </Stack>
           </VStack>

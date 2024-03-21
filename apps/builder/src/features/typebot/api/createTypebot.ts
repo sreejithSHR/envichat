@@ -37,7 +37,7 @@ export const createTypebot = authenticatedProcedure
       method: 'POST',
       path: '/v1/typebots',
       protect: true,
-      summary: 'Create a Envibot',
+      summary: 'Create an Envibot',
       tags: ['Typebot'],
     },
   })

@@ -36,7 +36,7 @@ test.describe.parallel('Settings page', () => {
       })
       await page.goto(`/typebots/${typebotId}/settings`)
       await expect(
-        page.locator('a:has-text("Made with EnviChat")')
+        page.locator('a:has-text("Product of Envidox")')
       ).toHaveAttribute('href', 'https://www.envichat.envidoxsolutions.com')
       await page.click('button:has-text("Typing emulation")')
       await page.fill('[data-testid="speed"] input', '350')

@@ -24,14 +24,14 @@ test.describe.parallel('Theme page', () => {
       // Branding
       await page.getByRole('button', { name: 'Global' }).click()
       await expect(
-        page.locator('a:has-text("Made with EnviChat")')
+        page.locator('a:has-text("Product of Envidox")')
       ).toHaveAttribute(
         'href',
         'https://envichat-builder.envidoxsolutions.com/'
       )
       await page.click('text="Show EnviChat brand"')
       await expect(
-        page.locator('a:has-text("Made with EnviChat")')
+        page.locator('a:has-text("Product of Envidox")')
       ).toBeHidden()
 
       // Font

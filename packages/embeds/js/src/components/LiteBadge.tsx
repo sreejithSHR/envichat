@@ -47,7 +47,7 @@ export const LiteBadge = (props: Props) => {
       id="lite-badge"
     >
       <TypebotLogo />
-      <span>Made with EnviChat</span>
+      <span>Product of Envidox</span>
     </a>
   )
 }

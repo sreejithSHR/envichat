@@ -3494,7 +3494,7 @@
     "/v1/typebots": {
       "post": {
         "operationId": "typebot-createTypebot",
-        "summary": "Create a Envibot",
+        "summary": "Create an Envibot",
         "tags": ["Typebot"],
         "security": [
           {

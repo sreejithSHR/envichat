@@ -9,4 +9,9 @@ export const enabledBlocks = [
   'mistral',
   'elevenlabs',
   'together-ai',
+  'web-xr',
+  'web-r',
+  'webar',
+  'wexr',
+  'webar',
 ] as const

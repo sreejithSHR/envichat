@@ -1345,6 +1345,78 @@ importers:
         specifier: 5.3.2
         version: 5.3.2
 
+  packages/forge/blocks/web-2:
+    devDependencies:
+      '@typebot.io/forge':
+        specifier: workspace:*
+        version: link:../../core
+      '@typebot.io/lib':
+        specifier: workspace:*
+        version: link:../../../lib
+      '@typebot.io/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tsconfig
+      '@types/react':
+        specifier: 18.2.15
+        version: 18.2.15
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
+
+  packages/forge/blocks/webR:
+    devDependencies:
+      '@typebot.io/forge':
+        specifier: workspace:*
+        version: link:../../core
+      '@typebot.io/lib':
+        specifier: workspace:*
+        version: link:../../../lib
+      '@typebot.io/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tsconfig
+      '@types/react':
+        specifier: 18.2.15
+        version: 18.2.15
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
+
+  packages/forge/blocks/webXr:
+    devDependencies:
+      '@typebot.io/forge':
+        specifier: workspace:*
+        version: link:../../core
+      '@typebot.io/lib':
+        specifier: workspace:*
+        version: link:../../../lib
+      '@typebot.io/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tsconfig
+      '@types/react':
+        specifier: 18.2.15
+        version: 18.2.15
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
+
+  packages/forge/blocks/webar:
+    devDependencies:
+      '@typebot.io/forge':
+        specifier: workspace:*
+        version: link:../../core
+      '@typebot.io/lib':
+        specifier: workspace:*
+        version: link:../../../lib
+      '@typebot.io/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tsconfig
+      '@types/react':
+        specifier: 18.2.15
+        version: 18.2.15
+      typescript:
+        specifier: 5.3.2
+        version: 5.3.2
+
   packages/forge/blocks/zemanticAi:
     devDependencies:
       '@typebot.io/forge':
@@ -1431,6 +1503,15 @@ importers:
       '@typebot.io/together-ai-block':
         specifier: workspace:*
         version: link:../blocks/togetherAi
+      '@typebot.io/web-r-block':
+        specifier: workspace:*
+        version: link:../blocks/webR
+      '@typebot.io/web-xr-block':
+        specifier: workspace:*
+        version: link:../blocks/webXr
+      '@typebot.io/webar-block':
+        specifier: workspace:*
+        version: link:../blocks/webar
       '@typebot.io/zemantic-ai-block':
         specifier: workspace:*
         version: link:../blocks/zemanticAi

@@ -1703,7 +1703,7 @@ const dt = ue(
   ),
   ut = () => dt(),
   pt = ue(
-    '<a href="https://www.envichat,envidoxsolutions.com" target="_blank" rel="noopener noreferrer" class="lite-badge" id="lite-badge"><span>Product of Envidox'
+    '<a href="https://www.envichat.envidoxsolutions.com" target="_blank" rel="noopener noreferrer" class="lite-badge" id="lite-badge"><span>Product of Envidox'
   ),
   ht = (e) => {
     let t, n

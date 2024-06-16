@@ -10902,7 +10902,7 @@ const ma = 'typebot-font',
             ? l(new Error("The bot you're looking for doesn't exist."))
             : l(
                 new Error(
-                  `Error! Couldn't initiate the chat. (${d.response.statusText})`
+                  `Error! Couldn't initiate the chat, refresh again. (${d.response.statusText})`
                 )
               )
           : c

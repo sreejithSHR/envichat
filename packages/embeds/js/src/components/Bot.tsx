@@ -88,7 +88,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
         return setError(new Error("The bot you're looking for doesn't exist."))
       return setError(
         new Error(
-          `Error! Couldn't initiate the chat. (${error.response.statusText})`
+          `Error! Couldn't initiate the chat, refresh again. (${error.response.statusText})`
         )
       )
     }
